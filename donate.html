@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="ASSETS/IMAGES/logo.png">
+    <link rel="stylesheet" href="ASSETS/CSS/pre-defines.css">
+    <link rel="stylesheet" href="ASSETS/CSS/donate.css">
+    <title>Support Our Work - Camara Education</title>
+</head>
+
+<body>
+    <!-- Navigation (consistent with main page) -->
+    <nav class="nav">
+        <a href="index.html" class="logo"><img src="ASSETS/IMAGES/logo.png" alt="" width="180px" height="auto"></a>
+        <div class="nav-bar ">
+            <div class="nav-item"><a href="index.html">Home</a></div>
+            <div class="nav-item active"><a href="about.html">About</a></div>
+            <div class="nav-item"><a href="activities.html">Activities</a></div>
+            <div class="nav-item"><a href="portfolio.html">Portfolio</a></div>
+            <div class="nav-item"><a href="donate.html">Donate</a></div>
+            <div class="nav-item"><a href="#contact">Contact</a></div>
+        </div>
+        <div class="phone">
+            <img src="ASSETS/SVG/phone-alt-svgrepo-com (1).svg" alt="Phone icon" width="30px" height="auto">
+            <div class="phone-number">+254707759885</div>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span class="menu-icon first"></span>
+            <span class="menu-icon 2"></span>
+            <span class="menu-icon 3"></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="donate-hero">
+        <div class="hero-content">
+            <h1>Empower Education Through Your Support</h1>
+            <p>Your donation helps bring digital learning to underserved communities across Africa</p>
+        </div>
+    </section>
+
+    <!-- Impact Calculator -->
+    <section class="impact-calculator">
+        <h2>See Your Impact</h2>
+        <div class="divider"></div>
+        
+        <div class="calculator-container">
+            <div class="calculator-visual">
+                <div class="impact-visualization" id="impactVisual">
+                    <img src="ASSETS/IMAGES/download.jpeg" alt="Student" class="student-icon">
+                    <div class="impact-text">Your donation could provide <span id="studentsImpacted">0</span> students with digital learning for a year</div>
+                </div>
+            </div>
+            
+            <div class="calculator-controls">
+                <div class="amount-presets">
+                    <button class="amount-btn" data-amount="25">$25</button>
+                    <button class="amount-btn" data-amount="50">$50</button>
+                    <button class="amount-btn" data-amount="100">$100</button>
+                    <button class="amount-btn" data-amount="250">$250</button>
+                    <button class="amount-btn" data-amount="500">$500</button>
+                </div>
+                
+                <div class="custom-amount">
+                    <label for="donationAmount">Or enter custom amount:</label>
+                    <div class="input-group">
+                        <span class="currency">$</span>
+                        <input type="number" id="donationAmount" min="1" step="1" placeholder="100">
+                    </div>
+                </div>
+                
+                <div class="frequency-selector">
+                    <p>Donation frequency:</p>
+                    <div class="frequency-options">
+                        <button class="frequency-btn active" data-frequency="one-time">One-time</button>
+                        <button class="frequency-btn" data-frequency="monthly">Monthly</button>
+                    </div>
+                </div>
+                
+                <button class="calculate-impact-btn">Calculate Impact</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Form Section -->
+    <section class="donation-form-section">
+        <div class="form-container">
+            <div class="form-intro">
+                <h2>Make Your Donation</h2>
+                <div class="divider"></div>
+                <p>Complete your donation securely via M-Pesa, credit card, or PayPal. All donations are tax-deductible.</p>
+                <div class="secure-badges">
+                    <img src="ASSETS/IMAGES/mpesa.png" alt="M-Pesa" width="80px">
+                    <img src="ASSETS/IMAGES/visa-logo-visa-icon-transparent-free-png.png" alt="Visa" width="50px">
+                    <img src="ASSETS/IMAGES/master-card-logo-png_seeklogo-89117.png" alt="Mastercard" width="50px">
+                    <img src="ASSETS/IMAGES/PayPal_Logo2014.png" alt="PayPal" width="80px">
+                </div>
+            </div>
+            
+            <form id="donationForm" class="donation-form">
+                <div class="form-section">
+                    <h3>Personal Information</h3>
+                    <div class="form-group">
+                        <label for="fullName">Full Name*</label>
+                        <input type="text" id="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone">
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3>Donation Details</h3>
+                    <div class="form-group">
+                        <label>Amount*</label>
+                        <div class="input-group">
+                            <span class="currency">$</span>
+                            <input type="number" id="finalAmount" min="1" step="1" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Frequency*</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="frequency" value="one-time" checked>
+                                <span class="radio-custom"></span>
+                                One-time donation
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="frequency" value="monthly">
+                                <span class="radio-custom"></span>
+                                Monthly donation
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3>Payment Method</h3>
+                    <div class="payment-methods">
+                        <div class="payment-tabs">
+                            <button type="button" class="payment-tab active" data-tab="mpesa">M-Pesa</button>
+                            <button type="button" class="payment-tab" data-tab="card">Credit Card</button>
+                            <button type="button" class="payment-tab" data-tab="paypal">PayPal</button>
+                        </div>
+                        
+                        <div class="payment-content active" id="mpesaContent">
+                            <div class="form-group">
+                                <label for="mpesaNumber">M-Pesa Number*</label>
+                                <input type="tel" id="mpesaNumber" placeholder="07XX XXX XXX">
+                            </div>
+                            <p class="instruction">You will receive a payment request on your phone</p>
+                        </div>
+                        
+                        <div class="payment-content" id="cardContent">
+                            <div class="form-group">
+                                <label for="cardNumber">Card Number*</label>
+                                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expiry">Expiry Date*</label>
+                                    <input type="text" id="expiry" placeholder="MM/YY">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvv">CVV*</label>
+                                    <input type="text" id="cvv" placeholder="123">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cardName">Name on Card*</label>
+                                <input type="text" id="cardName">
+                            </div>
+                        </div>
+                        
+                        <div class="payment-content" id="paypalContent">
+                            <p>You will be redirected to PayPal to complete your donation</p>
+                            <img src="ASSETS/IMAGES/paypal-checkout.png" alt="PayPal Checkout" class="paypal-checkout">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="newsletter" checked>
+                    <label for="newsletter">Receive updates about our impact (optional)</label>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="dedication" class="toggle-dedication">
+                    <label for="dedication">Make this donation in honor or memory of someone</label>
+                    
+                    <div class="dedication-fields">
+                        <div class="form-group">
+                            <label for="dedicationName">Name</label>
+                            <input type="text" id="dedicationName">
+                        </div>
+                        <div class="form-group">
+                            <label for="dedicationMessage">Message (optional)</label>
+                            <textarea id="dedicationMessage" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-donation-btn">Complete Donation</button>
+                
+                <p class="secure-note">
+                    <img src="ASSETS/IMAGES/secure transaction.png" alt="Secure" width="16px">
+                    Your donation is secure and encrypted
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Impact Stories -->
+    <section class="donation-impact">
+        <h2>How Your Donation Helps</h2>
+        <div class="divider"></div>
+        
+        <div class="impact-grid">
+            <div class="impact-item">
+                <div class="impact-icon">
+                    <img src="ASSETS/IMAGES/pngtree-laptop-computer---apps-icons-interface-silver-photo-png-image_13717427.png" alt="Laptop">
+                </div>
+                <h3>Digital Access</h3>
+                <p>$50 provides a student with computer access for one year</p>
+            </div>
+            
+            <div class="impact-item">
+                <div class="impact-icon">
+                    <img src="ASSETS/IMAGES/John Doe.png" alt="Teacher">
+                </div>
+                <h3>Teacher Training</h3>
+                <p>$100 trains a teacher in digital education methods</p>
+            </div>
+            
+            <div class="impact-item">
+                <div class="impact-icon">
+                    <img src="ASSETS/IMAGES/solar png.png" alt="Solar Panel">
+                </div>
+                <h3>Sustainable Energy</h3>
+                <p>$250 funds solar power for a rural computer lab</p>
+            </div>
+            
+            <div class="impact-item">
+                <div class="impact-icon">
+                    <img src="ASSETS/IMAGES/computer lab.jpeg" alt="School">
+                </div>
+                <h3>Full Lab</h3>
+                <p>$5000 establishes a complete digital learning center</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="donation-faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="divider"></div>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    Is my donation tax-deductible?
+                    <span class="toggle-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, Camara Education is a registered non-profit organization, and all donations are tax-deductible to the fullest extent allowed by law. You will receive a receipt for your records.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    How are my donations used?
+                    <span class="toggle-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>85% of your donation directly supports our education programs, including setting up computer labs, training teachers, and developing digital curriculum. 15% supports our operational costs to ensure we can continue this important work.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can I donate equipment instead of money?
+                    <span class="toggle-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! We accept donations of laptops, tablets, and other educational technology in good working condition. Please <a href="index.html#contact">contact us</a> to arrange a equipment donation.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do recurring donations work?
+                    <span class="toggle-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Monthly donations are charged automatically each month to your chosen payment method. You can modify or cancel your recurring donation at any time by contacting our donor support team.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    What payment methods do you accept?
+                    <span class="toggle-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We accept M-Pesa payments for Kenyan donors, as well as all major credit cards (Visa, Mastercard, American Express) and PayPal for international donors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (consistent with main page) -->
+    <section class="footer" id="contact">
+        <div class="footer-content">
+            <div class="email">
+                <p class="text">E-mail</p>
+                <a href="mailto:camaralimited@gmail.com"><img src="ASSETS/SVG/email-14-svgrepo-com.svg" alt="Email icon"> camaralimited@gmail.com</a>
+            </div>
+            <div class="bar-vertical"></div>
+            <div class="social-media">
+                <div class="section-1">
+                    <a href="#" class="card">
+                        <img src="ASSETS/SVG/whatsapp-128-svgrepo-com.svg" alt="WhatsApp">
+                        <p class="text">Whatsapp</p>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="ASSETS/SVG/facebook-176-svgrepo-com.svg" alt="Facebook">
+                        <p class="text">Facebook</p>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="ASSETS/SVG/twitter-3-svgrepo-com.svg" alt="Twitter">
+                        <p class="text">Twitter</p>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="ASSETS/SVG/linked-in-logo-of-two-letters-svgrepo-com.svg" alt="LinkedIn">
+                        <p class="text">LinkedIn</p>
+                    </a>
+                </div>
+                <div class="section-2">
+                    <a href="#" class="card">
+                        <img src="ASSETS/SVG/instagram-svgrepo-com.svg" alt="Instagram">
+                        <p class="text">Instagram</p>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="ASSETS/SVG/youtube-play-svgrepo-com.svg" alt="YouTube">
+                        <p class="text">YouTube</p>
+                    </a>
+                    <a href="#" class="card">
+                        <img src="ASSETS/SVG/tiktok-svgrepo-com.svg" alt="TikTok">
+                        <p class="text">TikTok</p>
+                    </a>
+                </div>
+            </div>
+            <div class="bar-vertical"></div>
+            <div class="footer-logo"><img src="ASSETS/IMAGES/logo.png" alt="Camara Education Logo"></div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Camara Education. All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="ASSETS/JS/pre-defines.js"></script>
+    <script src="ASSETS/JS/donate.js"></script>
+</body>
+</html>
