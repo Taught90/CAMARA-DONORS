@@ -1,0 +1,665 @@
+@import url('pre-defines.css');
+
+/* Donation Hero Section */
+.donate-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../IMAGES/Support-a-Cause-Donate-to-an-NGO-in-India-Today.jpg') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: var(--margin-120);
+}
+
+.donate-hero .hero-content h1 {
+    font-family: var(--oswald);
+    font-size: var(--heading-x-large);
+    font-weight: var(--weight-large);
+    color: var(--orange);
+    margin-bottom: var(--margin-30);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.donate-hero .hero-content p {
+    font-family: var(--roboto);
+    font-size: var(--text-large);
+    color: var(--white);
+    max-width: 70%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Impact Calculator Section */
+.impact-calculator {
+    padding: var(--padding-40) var(--padding-20);
+    margin-bottom: var(--margin-120);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 50vh;
+
+}
+
+.impact-calculator h2 {
+    font-family: var(--oswald);
+    font-size: var(--heading-medium);
+    font-weight: var(--weight-medium);
+    color: var(--green);
+    text-align: center;
+    margin-bottom: var(--margin-20);
+}
+
+.divider {
+    height: 4px;
+    width: 80px;
+    background: var(--light-green);
+    margin: 0 auto var(--margin-50);
+}
+
+.calculator-container {
+    display: flex;
+    gap: var(--margin-50);
+    min-height: 50vh;
+    align-items: center;
+}
+
+.calculator-visual {
+    flex: 1;
+    background-color: var(--icebag);
+    border-radius: 20px;
+    padding: var(--padding-30);
+    text-align: center;
+    min-height: 50vh;
+
+}
+
+.impact-visualization {
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-icon {
+    width: 100px;
+    margin-bottom: var(--margin-20);
+}
+
+.impact-text {
+    font-family: var(--roboto);
+    font-size: var(--text-large);
+    color: var(--navy-blue);
+    line-height: 1.6;
+}
+
+.impact-text span {
+    font-weight: var(--weight-bold);
+    color: var(--light-green);
+}
+
+.calculator-controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.amount-presets {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--margin-30);
+}
+
+.amount-btn {
+    padding: var(--padding-5) var(--padding-10);
+    background: white;
+    border: 2px solid var(--light-green);
+    border-radius: 50px;
+    font-family: var(--Montserrat);
+    font-size: var(--text-medium);
+    color: var(--light-green);
+    margin:0 var(--margin-10);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.amount-btn:hover, .amount-btn.active {
+    background: var(--light-green);
+    color: white;
+}
+
+.custom-amount {
+    margin-bottom: var(--margin-30);
+}
+
+.custom-amount label {
+    display: block;
+    font-family: var(--roboto);
+    font-size: var(--text-medium);
+    color: var(--navy-blue);
+    margin-bottom: var(--margin-10);
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: var(--padding-10) var(--padding-15);
+    transition: border-color 0.3s ease;
+}
+
+.input-group:focus-within {
+    border-color: var(--light-green);
+}
+
+.currency {
+    font-family: var(--Montserrat);
+    font-size: var(--text-large);
+    color: var(--navy-blue);
+    margin-right: var(--margin-10);
+}
+
+.input-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: var(--roboto);
+    font-size: var(--text-large);
+    color: var(--navy-blue);
+}
+
+.frequency-selector {
+    margin-bottom: var(--margin-30);
+}
+
+.frequency-selector p {
+    font-family: var(--roboto);
+    font-size: var(--text-medium);
+    color: var(--navy-blue);
+    margin-bottom: var(--margin-10);
+}
+
+.frequency-options {
+    display: flex;
+    gap: var(--margin-15);
+}
+
+.frequency-btn {
+    padding: var(--padding-10) var(--padding-20);
+    background: white;
+    border: 2px solid var(--light-green);
+    border-radius: 50px;
+    font-family: var(--Montserrat);
+    font-size: var(--text-medium);
+    color: var(--light-green);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.frequency-btn:hover, .frequency-btn.active {
+    background: var(--light-green);
+    color: white;
+}
+
+.calculate-impact-btn {
+    width: 100%;
+    padding: var(--padding-15);
+    background: var(--light-green);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-family: var(--Montserrat);
+    font-size: var(--text-medium);
+    font-weight: var(--weight-bold);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.calculate-impact-btn:hover {
+    background: var(--green);
+}
+
+/* Donation Form Section */
+.donation-form-section {
+    background-color: var(--icebag);
+    padding: var(--padding-60) var(--padding-20);
+    margin-bottom: var(--margin-120);
+}
+
+.form-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: var(--margin-50);
+}
+
+.form-intro {
+    flex: 1;
+}
+
+.form-intro h2 {
+    font-family: var(--oswald);
+    font-size: var(--heading-medium);
+    font-weight: var(--weight-medium);
+    color: var(--green);
+    margin-bottom: var(--margin-20);
+}
+
+.form-intro p {
+    font-family: var(--roboto);
+    font-size: var(--text-medium);
+    color: var(--navy-blue);
+    line-height: 1.6;
+    margin-bottom: var(--margin-30);
+}
+
+.secure-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--margin-20);
+    align-items: center;
+    margin-top: var(--margin-40);
+}
+
+.donation-form {
+    flex: 1;
+    background: white;
+    border-radius: 20px;
+    padding: var(--padding-30);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    margin-bottom: var(--margin-30);
+}
+
+.form-section h3 {
+    font-family: var(--oswald);
+    font-size: var(--heading-moderate);
+    color: var(--navy-blue);
+    margin-bottom: var(--margin-20);
+    padding-bottom: var(--padding-10);
+    border-bottom: 2px solid #eee;
+}
+
+.form-group {
+    margin-bottom: var(--margin-20);
+}
+
+.form-group label {
+    display: block;
+    font-family: var(--roboto);
+    font-size: var(--text-medium);
+    color: var(--navy-blue);
+    margin-bottom: var(--margin-10);
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: var(--padding-12) var(--padding-15);
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-family: var(--roboto);
+    font-size: var(--text-medium);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: var(--light-green);
+    outline: none;
+}
+
+.form-row {
+    display: flex;
+    gap: var(--margin-20);
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-15);
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    font-family: var(--roboto);
+    font-size: var(--text-medium);
+    color: var(--navy-blue);
+    cursor: pointer;
+}
+
+.radio-custom {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--light-green);
+    border-radius: 50%;
+    margin-right: var(--margin-10);
+    position: relative;
+}
+
+.radio-option input {
+    position: absolute;
+    opacity: 0;
+}
+
+.radio-option input:checked + .radio-custom::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    background: var(--light-green);
+    border-radius: 50%;
+}
+
+.payment-tabs {
+    display: flex;
+    border-bottom: 2px solid #eee;
+    margin-bottom: var(--margin-20);
+}
+
+.payment-tab {
+    padding: var(--padding-10) var(--padding-20);
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-family: var(--Montserrat);
+    font-size: var(--text-medium);
+    color: var(--navy-blue);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.payment-tab:hover, .payment-tab.active {
+    color: var(--light-green);
+    border-bottom-color: var(--light-green);
+}
+
+.payment-content {
+    display: none;
+}
+
+.payment-content.active {
+    display: block;
+}
+
+.paypal-checkout {
+    max-width: 200px;
+    margin-top: var(--margin-20);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--margin-15);
+}
+
+.checkbox-group input {
+    margin-right: var(--margin-10);
+    width: auto;
+}
+
+.dedication-fields {
+    display: none;
+    margin-top: var(--margin-20);
+    padding-left: var(--padding-20);
+    border-left: 3px solid var(--light-green);
+}
+
+.toggle-dedication:checked ~ .dedication-fields {
+    display: block;
+}
+
+.submit-donation-btn {
+    width: 100%;
+    padding: var(--padding-15);
+    background: var(--light-green);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-family: var(--Montserrat);
+    font-size: var(--text-medium);
+    font-weight: var(--weight-bold);
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: var(--margin-30);
+}
+
+.submit-donation-btn:hover {
+    background: var(--green);
+}
+
+.secure-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--margin-10);
+    font-family: var(--roboto);
+    font-size: var(--text-small);
+    color: var(--navy-blue);
+    margin-top: var(--margin-20);
+    text-align: center;
+}
+
+/* Impact Section */
+.donation-impact {
+    padding: var(--padding-40) var(--padding-20);
+    margin-bottom: var(--margin-120);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.donation-impact h2 {
+    font-family: var(--oswald);
+    font-size: var(--heading-medium);
+    font-weight: var(--weight-medium);
+    color: var(--green);
+    text-align: center;
+    margin-bottom: var(--margin-20);
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--margin-30);
+    margin-top: var(--margin-50);
+}
+
+.impact-item {
+    background: white;
+    border-radius: 20px;
+    padding: var(--padding-30);
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.impact-item:hover {
+    transform: translateY(-10px);
+}
+
+.impact-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--icebag);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--margin-20);
+}
+
+.impact-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.impact-item h3 {
+    font-family: var(--oswald);
+    font-size: var(--heading-moderate);
+    color: var(--navy-blue);
+    margin-bottom: var(--margin-15);
+}
+
+.impact-item p {
+    font-family: var(--roboto);
+    font-size: var(--text-medium);
+    color: var(--navy-blue);
+    line-height: 1.6;
+}
+
+/* FAQ Section */
+.donation-faq {
+    padding: var(--padding-40) var(--padding-20);
+    margin-bottom: var(--margin-120);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.donation-faq h2 {
+    font-family: var(--oswald);
+    font-size: var(--heading-medium);
+    font-weight: var(--weight-medium);
+    color: var(--green);
+    text-align: center;
+    margin-bottom: var(--margin-20);
+}
+
+.faq-container {
+    margin-top: var(--margin-50);
+}
+
+.faq-item {
+    border-bottom: 1px solid #eee;
+    margin-bottom: var(--margin-15);
+}
+
+.faq-question {
+    width: 100%;
+    padding: var(--padding-15) 0;
+    background: none;
+    border: none;
+    text-align: left;
+    font-family: var(--oswald);
+    font-size: var(--text-large);
+    color: var(--navy-blue);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    color: var(--light-green);
+}
+
+.toggle-icon {
+    font-size: var(--heading-moderate);
+    color: var(--light-green);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+    font-family: var(--roboto);
+    font-size: var(--text-medium);
+    color: var(--navy-blue);
+    line-height: 1.6;
+    padding-bottom: var(--padding-20);
+}
+
+.faq-answer a {
+    color: var(--light-green);
+    text-decoration: none;
+}
+
+.faq-answer a:hover {
+    text-decoration: underline;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+}
+
+.faq-item.active .toggle-icon {
+    content: '-';
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .calculator-container {
+        flex-direction: column;
+    }
+    
+    .form-container {
+        flex-direction: column;
+    }
+    
+    .form-intro {
+        text-align: center;
+    }
+    
+    .secure-badges {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .donate-hero .hero-content h1 {
+        font-size: var(--heading-large);
+    }
+    
+    .donate-hero .hero-content p {
+        font-size: var(--text-medium);
+        max-width: 90%;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: var(--margin-15);
+    }
+
+}
+
+@media (max-width: 576px) {
+    .amount-presets {
+        justify-content: center;
+    }
+    
+    .payment-tabs {
+        flex-direction: column;
+        border-bottom: none;
+    }
+    
+    .payment-tab {
+        border-bottom: none;
+        border-left: 3px solid transparent;
+        text-align: left;
+    }
+    
+    .payment-tab.active {
+        border-left-color: var(--light-green);
+    }
+    
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+}
