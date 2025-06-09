@@ -1,37 +1,37 @@
 /* Roboto */
 @font-face {
     font-family: 'Roboto';
-    src: url('/ASSETS/FONTS/Roboto/Roboto-VariableFont_wdth\,wght.ttf') format('truetype');
+    src: url('../FONTS/Roboto/Roboto-VariableFont_wdth\,wght.ttf') format('truetype');
 }
 
 /* Open Sans */
 @font-face {
     font-family: 'Open Sans';
-    src: url('/ASSETS/FONTS/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+    src: url('../FONTS/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
 }
 
 /* Montserrat */
 @font-face {
     font-family: 'Montserrat';
-    src: url('/ASSETS/FONTS/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    src: url('../FONTS/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
 
 /* Oswald */
 @font-face {
     font-family: 'Oswald';
-    src: url('/ASSETS/FONTS/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+    src: url('../FONTS/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
 }
 
 /* Inconsolata */
 @font-face {
     font-family: 'Inconsolata';
-    src: url('/ASSETS/FONTS/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf') format('truetype');
+    src: url('../FONTS/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf') format('truetype');
 }
 
 /* Edu AU VIC WA NT Arrows */
 @font-face {
     font-family: 'Edu AU VIC WA NT Arrows';
-    src: url('/ASSETS/FONTS/Edu_AU_VIC_WA_NT_Arrows/EduAUVICWANTArrows-VariableFont_wght.ttf') format('truetype');
+    src: url('../FONTS/Edu_AU_VIC_WA_NT_Arrows/EduAUVICWANTArrows-VariableFont_wght.ttf') format('truetype');
 }
 
 * {
